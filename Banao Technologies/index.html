@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <div class="whole" id="blur">
+    <div class="nav">
+      <div class="logo">
+        <image src="./whole.svg" id="logoImage" />
+      </div>
+      <div class="search">
+        <image src="./Group 29.svg" />
+      </div>
+      <div class="container">
+        <a href="#" id="main_anc">
+          <div class="nav1">
+            <image src="./Create account. It’s free!.svg" id="navImage" />
+          </div>
+          <div class="nav2" id="navDropArrow">
+            <image src="./baseline-arrow_drop_down-24px.svg" />
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+
+
+    <div id="popup1">
+      <div id="green_popup"></div>
+    <div id="text1_popup">
+      Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼
+    </div>
+    <div id="img_popup">
+      <img src="./atg_illustration.svg" />
+    </div>
+    <div id="login">
+      <img src="./Group 3(5).png"/>
+    </div>
+    <div id="button1">
+      <a href="/"><img src="Group 2(1).png"></a>
+    </div>
+    
+    <div id="facebook">
+      <a href="/"><img src="./Group 3(4).svg"></a>
+    </div>
+    <div id="google">
+      <a href="/"><img src="./Group 3(5).svg"></a>
+    </div>
+    <div class="sign_text_main" id="signinBtn">
+      <a href="/" ><img src="./Already have an account_ Sign In.png"></a>
+    </div>
+    </div>
+
+
+
+
+    <div id="popup2">
+      <div id="green_popup"></div>
+    <div id="text1_popup">
+      Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼
+    </div>
+    <div id="img_popup">
+      <img src="./atg_illustration.svg" />
+    </div>
+    <div id="login">
+      <img src="./Group 3(2).png"/>
+    </div>
+    <div id="button2">
+      <a href="/"><img src="./Group 2.png"></a>
+    </div>
+    
+    <div id="facebook1">
+      <a href="/"><img src="./Group 3(3).png"></a>
+    </div>
+    <div id="google1">
+      <a href="/"><img src="./Group 3(4).png"></a>
+    </div>
+    <div id="for_pass">
+      <a href="/"><img src="./Forgot Password_.png"></a>
+    </div>
+    <div id="sign_text">
+      <img src="./By signing up, you agree to our Terms & conditions, Privacy policy.svg">
+    </div>
+    <div class="sign_text_main1" id="signupBtn">
+      <a href="/" ><img src="./Don’t have an account yet_ Create new for free!.png"></a>
+    </div>
+    </div>
+
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const mainAnchor = document.getElementById('main_anc');
+    const signinBtn = document.getElementById('signinBtn');
+    const signupBtn = document.getElementById('signupBtn');
+    const popup1 = document.getElementById('popup1');
+    const popup2 = document.getElementById('popup2');
+    const logoImage = document.getElementById('logoImage');
+    const navImage = document.getElementById('navImage');
+    const navDropArrow = document.getElementById('navDropArrow');
+
+    mainAnchor.addEventListener('click', function(event) {
+      event.preventDefault();
+      popup1.style.display = 'block'; 
+    });
+
+    signinBtn.addEventListener('click', function(event) {
+      event.preventDefault();
+      popup2.style.display = 'block';
+      popup1.style.display = 'none';  
+    });
+
+    signupBtn.addEventListener('click', function(event) {
+      event.preventDefault();
+      popup1.style.display = 'block'; 
+      popup2.style.display = 'none';  
+    });
+
+    const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+        const recommend = document.getElementById('recommend');
+
+        button1.addEventListener('click', function(event) {
+          event.preventDefault();
+          popup1.style.display = 'none';  
+          popup2.style.display = 'none'; 
+          navImage.src = "./Group 64.svg";
+          navDropArrow.style.display = 'none'; 
+          recommend.style.display = 'block'; 
+        });
+
+        button2.addEventListener('click', function(event) {
+          event.preventDefault();
+          popup1.style.display = 'none'; 
+          popup2.style.display = 'none'; 
+          navImage.src = "./Group 64.svg"; 
+          navDropArrow.style.display = 'none'; 
+          recommend.style.display = 'block';
+        });
+      });
+      
+  function handlePencilClick() {
+    alert('Pencil icon clicked!');
+  }
+</script>
+
+
+
+
+</script>
+
+<div id="recommend" style="display: none;">
+  <img src="./Group 65.svg">
+</div>
+
+
+
+
+
+
+
+
+
+<div id="parent1">
+  <div id="parent">
+    <div class="img1">
+      <img src="./Rectangle 2.png" width="100%" height="100%" />
+    </div>
+    <div class="img2">
+      <img src="./Rectangle 3(1).png" width="100%" />
+    </div>
+  </div>
+  <div class="text1">
+    <b>Computer Engineering</b>
+  </div>
+  <div class="text2">142,765 Computer Engineers follow this</div>
+</div>
+ 
+    
+    
+<div id="down">
+  <div class="text3">Noida, India</div>
+  <div id="line1"></div>
+  <div id="line2"></div>
+  <div id="line3"></div>
+  <div id="line4"></div>
+  <div id="img3">
+      <img src="./Group 34.svg" width="100%" />
+  </div>
+  <div id="img4">
+      <img src="./Group 7.svg" />
+  </div>
+  <div id="img5">
+      <img src="./Group 61.svg" width="100%" />
+  </div>
+  <div id="img6">
+      <img src="./Group 43.svg" width="100%" />
+  </div>
+  <div id="img7">
+      <img src="./Group 42.svg" width="100%" />
+  </div>
+  <div id="img8">
+      <img src="./outline-location_on-24px 2.svg" width="100%" />
+  </div>
+  <div id="img9">
+      <img src="./baseline-edit-24px.svg" width="100%" />
+  </div>
+</div>
+
+<div id="down_1">
+
+  <ul>
+    <li><img src="./pb0.png" width="100%" ></li>
+      <li><img src="./pb111.png" width="100%" ></li>
+      <li><img src="./pb2.png" width="100%" ></li>
+      <li><img src="./pb3.png" width="100%" ></li>
+      <li><img src="./pb4.png" width="100%" >
+    </ul>
+  
+  
+</div>
+
+    
+  </body>
+</html>
